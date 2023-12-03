@@ -140,7 +140,6 @@ const OrderForm = ({
   }, [isLoaded])
   return (
     <form id="form" onSubmit={calculateRoute}>
-      c
       <div className={classes.cardList}>
         {waypoints.map((waypoint, index) => (
           <FormMapPointInput
