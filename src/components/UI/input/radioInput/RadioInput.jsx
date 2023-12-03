@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import classes from './RadioInput.module.scss'
 
 const RadioInput = ({
@@ -8,12 +8,6 @@ const RadioInput = ({
   handleOptionChange,
   selectedOption,
 }) => {
-  const [isChecked, setIschecked] = useState(true)
-
-  const handleOnChange = () => {
-    setIschecked(!isChecked)
-  }
-
   return (
     <div
       className={
