@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+.navList {
+  display: flex;
+  font-weight: 300;
+  width: fit-content;
+  align-items: start;
+  column-gap: 5px;
+}
+
+.mainSpan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.navListActive {
+  border-bottom: 1px solid $accent-color;
+}

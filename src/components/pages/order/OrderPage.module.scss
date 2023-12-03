@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  padding: 0 50px;
+  display: flex;
+  color: $dim-text;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+.mainText {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+}
+
+.headText {
+  color: $accent-color;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.content {
+  display: flex;
+  column-gap: 50px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .container {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+
+  .settings {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.headText {
+  color: $accent-color;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.paymentContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 15px;
+}

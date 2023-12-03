@@ -1,0 +1,140 @@
+@import '../../../styles/variables.scss';
+.container {
+  width: 44%;
+  padding: 10px;
+  background-color: #f1f0ff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: fit-content;
+  font-weight: 300;
+  font-size: 14px;
+  align-items: center;
+  color: $dim-text;
+  border-radius: 10px;
+}
+
+.infoRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: #171717;
+}
+.totalPriceValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: $accent-color;
+}
+.advetising {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height: fit-content;
+
+  & > img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 120px;
+    max-width: 200px;
+  }
+}
+.adverisinImages {
+  position: relative;
+}
+.adverisingMark {
+  position: absolute;
+  right: -7px;
+  top: -7px;
+}
+.hit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  top: 7px;
+  left: 7px;
+  width: 32px;
+  height: 20px;
+  background-color: rgba(#0cb913, 0.5);
+}
+.pricing {
+  width: 100%;
+}
+.textAccent {
+  font-weight: 700;
+  font-size: 19px;
+  color: $accent-color;
+}
+.advetisingLeftInf {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.advetisingText {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.textMediumBlack {
+  font-weight: 500;
+  font-size: 16px;
+  color: $gray-text;
+}
+
+.advetisingRightInf {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.advetisingRightInfContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+.infoRowContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 5;
+}
+
+@media (max-width: 1300px) {
+  .advetising {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 860px) {
+  .textHidden {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .advetising {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    & > img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+}

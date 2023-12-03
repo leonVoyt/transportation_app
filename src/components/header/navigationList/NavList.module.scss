@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.navList {
+  display: flex;
+  column-gap: 20px;
+
+  img {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.navListItem {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+.langSelect {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+
+  & option {
+    cursor: pointer;
+  }
+}

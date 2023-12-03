@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+.navBar {
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+.myInput {
+  border: 2px solid transparent;
+  border-bottom: 1px solid $accent-color;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1.5px solid $gray-stroke;
+  flex: 1;
+  outline-color: $accent-color;
+}
+
+.icon {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.myInputContainer {
+  flex: 1;
+
+  display: flex;
+  position: relative;
+  flex-direction: row; // Set flexDirection to row
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.burgerItem {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+@media (max-width: 1040px) {
+  .hidden {
+    display: none;
+  }
+  .myInputContainer {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+
+.input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid $accent-color;
+  width: 87%;
+}
+.headText {
+  color: $accent-color;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.contactsContainer {
+  display: flex;
+  margin: 15px 0 20px 0;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.contactsItem {
+  width: 50%;
+  min-width: 100px;
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+}

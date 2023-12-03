@@ -1,0 +1,57 @@
+@import '../../../styles/variables.scss';
+
+.aboutCargoContainer {
+  display: flex;
+  margin: 15px 0 20px 0;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.cargoInfo {
+  width: 45%;
+  min-width: 150px;
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+}
+.cargoDimensions {
+  display: flex;
+  column-gap: 10px;
+}
+.textarea {
+  width: 100%;
+  resize: none;
+  padding: 0.5rem 0.5rem;
+  margin-top: 5px;
+  outline-color: $accent-color;
+  border-color: $gray-stroke;
+  border-radius: 10px;
+}
+.input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid $accent-color;
+  width: 87%;
+}
+.headText {
+  color: $accent-color;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.inputShort {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid $accent-color;
+  width: 30%;
+}
+
+@media (max-width: 560px) {
+  .cargoInfo {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+}

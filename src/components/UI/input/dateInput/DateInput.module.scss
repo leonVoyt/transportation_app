@@ -1,0 +1,28 @@
+@import '../../../../styles/variables.scss';
+
+input[type='date'] {
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  // border-bottom: 2px solid #0080ff;
+}
+::-webkit-calendar-picker-indicator {
+  width: 25px;
+  height: 25px;
+  margin-bottom: -5px;
+  cursor: pointer;
+}
+
+.block {
+  width: 100%;
+
+  position: relative;
+}
+.line {
+  height: 1px;
+  width: 87%;
+  background-color: $accent-color;
+}
